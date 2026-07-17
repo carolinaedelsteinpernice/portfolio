@@ -135,7 +135,6 @@
 
 </section>
 
-
 <!-- CONTACTO -->
 <section id="contacto" class="container contacto">
 
@@ -143,31 +142,57 @@
 
     <hr>
 
-    <form>
+    <form action="https://formspree.io/f/mzdneovn" method="POST">
 
         <div class="mb-3">
             <label class="form-label">Nombre</label>
-            <input type="text" class="form-control" placeholder="Ingresá tu nombre">
+
+            <input 
+            type="text" 
+            name="nombre"
+            class="form-control" 
+            placeholder="Ingresá tu nombre"
+            required>
+
         </div>
 
 
         <div class="mb-3">
+
             <label class="form-label">Email</label>
-            <input type="email" class="form-control" placeholder="Ingresá tu email">
+
+            <input 
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Ingresá tu email"
+            required>
+
         </div>
 
 
         <div class="mb-3">
+
             <label class="form-label">Mensaje</label>
-            <textarea class="form-control" rows="4"></textarea>
+
+            <textarea 
+            name="mensaje"
+            class="form-control" 
+            rows="5"
+            placeholder="Escribí tu mensaje"
+            required></textarea>
+
         </div>
 
 
-        <button class="btn btn-dark">
-            Enviar
+        <button type="submit" class="btn btn-dark">
+            Enviar mensaje
         </button>
 
+
     </form>
+
+</section>
 
 </section>
 
